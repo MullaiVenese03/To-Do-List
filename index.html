@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do list App</title>
+    <link rel="icon" href="Assets/Icons/list-check-solid.svg">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>To-Do list</h1>
+
+    <!-- Task Entering -->
+    <div class="container">
+      <input type="text" id="enterTasks" placeholder="Enter Tasks Here" minlength="1" />
+  
+      <!-- Buttons -->
+      <button id="addBtn">☑️</button>
+      <button id="clearBtn">❌</button>
+  
+      <!-- All Tasks List -->
+      <div id="tasklist">
+        <h2>Task List</h2>
+        <ul id="tasks"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
