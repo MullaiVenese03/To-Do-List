@@ -5,6 +5,7 @@ body {
     box-sizing: border-box;
     justify-items: center;
     background: url(Assets/Images/Background-Color.jpg);
+    background: url(Assets/Background-Color.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     color: #ffffff;
