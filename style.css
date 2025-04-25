@@ -5,8 +5,8 @@ body {
     box-sizing: border-box;
     justify-items: center;
     background: url(Assets/Images/Background-Color.jpg);
-    background: url(Assets/Background-Color.jpg);
-    background-size: cover;
+    height: 100vh;
+    background-size:cover;
     background-repeat: no-repeat;
     color: #ffffff;
     font-family:Verdana;
@@ -38,9 +38,10 @@ button {
 /* Class CSS */
 .container {
     place-items: center;
-    height: 100%;
-    word-break:break-all;
-    width: 50%;
+    height: auto;
+    word-break: break-word;
+    word-wrap: break-word;
+    width: 75%;
     color: #ffffff;
     border-radius: 25px;
     padding: 30px;
@@ -74,4 +75,42 @@ input:focus{
 
 input::placeholder {
     color: #ffffff;
+}
+
+/* Media Queries */
+
+/* Screen for 1000 to 1260 px */
+@media screen and ( min-width: 1000px ) and ( max-width: 1260px ) {
+
+    .container {
+        width: 80%;    
+    }
+}
+
+/* Screen for 800 to 1000 px */
+@media screen and ( min-width: 800px ) and ( max-width: 1000px ) {
+
+    .container {
+        width: 80%;    
+    }
+
+    #tasks {
+        grid-template-columns:auto auto ;
+    }
+}
+
+/* Screen for 0 to 1000 px */
+@media screen and ( max-width: 800px ) {
+
+    .container {
+        width: 80%;    
+    }
+
+    #tasks {
+        grid-template-columns:auto;
+    }
+
+    .container input {
+        width: 90%;
+    }
 }
